@@ -3,11 +3,11 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #fff;
+  color: #294892;
 }
 
 body {
-  background-color: black;
+  background-color: #fff;
   font-family: 'Outfit', sans-serif;
 }
 
@@ -26,8 +26,8 @@ body {
 header {
   position: fixed;
   z-index: 999;
-  height: 6em;
-  width: 100%;
+  height: 5em;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,9 +37,18 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 2.1em;
-  background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(65.62%, rgba(0, 0, 0, 0.578125)), to(rgba(0, 0, 0, 0)));
-  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.578125) 65.62%, rgba(0, 0, 0, 0) 100%);
+  padding: 0 8%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 7px #999999;
+          box-shadow: 0 2px 7px #999999;
+}
+
+header .logo {
+  width: 3.5em;
+}
+
+header .logo img {
+  width: 100%;
 }
 
 header .social-links {
@@ -69,6 +78,10 @@ header nav .close {
   margin: 2em 2.1em;
 }
 
+header nav .close path {
+  fill: #294892;
+}
+
 header nav ul {
   margin-top: 10em;
   display: -webkit-box;
@@ -84,13 +97,18 @@ header nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  list-style: none;
 }
 
 header nav ul a {
-  color: #000;
+  color: #294892;
   text-decoration: none;
   padding: 1.5em 0;
   display: block;
+}
+
+header nav ul a:hover {
+  color: #F19C38;
 }
 
 .hero {
@@ -107,7 +125,7 @@ header nav ul a {
 }
 
 .hero video {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: absolute;
   top: 0;
@@ -126,19 +144,21 @@ header nav ul a {
   font-weight: 700;
   font-size: 44px;
   line-height: 3rem;
-  text-shadow: 0 0 8px #000;
 }
 
 .hero .main-text p {
   font-size: 16px;
   font-weight: 300;
-  margin: 1.5em 0;
-  text-shadow: 0 0 8px #000;
+  margin: 1em 0 1.5em;
+}
+
+.hero .main-text p span {
+  font-weight: 500;
 }
 
 .hero .main-text .main-btn {
-  border: 2px solid white;
-  width: 60%;
+  border: 1.3px solid #294892;
+  width: 9em;
   padding: 1em 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,8 +169,8 @@ header nav ul a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0 0 10px #fff;
-          box-shadow: 0 0 10px #fff;
+  -webkit-box-shadow: 0 0 5px #294892;
+          box-shadow: 0 0 5px #294892;
 }
 
 .hero .main-text .main-btn a {
@@ -158,7 +178,6 @@ header nav ul a {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 600;
-  text-shadow: 0 0 8px #000;
 }
 
 .hero .main-text .main-btn .arrow {
@@ -166,15 +185,119 @@ header nav ul a {
 }
 
 .hero .gradient {
-  background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(65.62%, rgba(0, 0, 0, 0.578125)), to(rgba(0, 0, 0, 0)));
-  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.578125) 65.62%, rgba(0, 0, 0, 0) 100%);
-  -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
-          transform: matrix(1, 0, 0, -1, 0, 0);
+  background: -webkit-gradient(linear, left bottom, left top, from(#FFFFFF), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
   height: 10em;
   z-index: 500;
   width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+section {
+  height: 65em;
+  width: 100%;
+  position: relative;
+  padding: 2em 8% 0;
+}
+
+section h2 {
+  font-size: 2rem;
+}
+
+section h2 span {
+  position: relative;
+}
+
+section h2 span::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  right: 0;
+  height: 3px;
+  width: 72%;
+  background-color: #F19C38;
+}
+
+section .circulo {
+  height: 50em;
+  width: 20em;
+  background-color: #294892;
+  position: absolute;
+  top: 10em;
+  left: -20em;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  -webkit-filter: blur(100px);
+          filter: blur(100px);
+}
+
+section .flex-help {
+  margin-top: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5em;
+}
+
+section .flex-help .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 8em;
+  height: 8em;
+}
+
+section .flex-help .item p {
+  margin-top: .3em;
+}
+
+section .btn-help {
+  margin: 3em auto;
+  border: 1.3px solid #294892;
+  width: 9em;
+  padding: 1em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 5px #294892;
+          box-shadow: 0 0 5px #294892;
+}
+
+section .btn-help a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+section .btn-help .arrow {
+  width: .7em;
 }
 /*# sourceMappingURL=estilos.css.map */
