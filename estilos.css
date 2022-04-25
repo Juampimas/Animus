@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -195,22 +195,22 @@ header nav ul a:hover {
   left: 0;
 }
 
-section {
+#help {
   height: 65em;
   width: 100%;
   position: relative;
   padding: 2em 8% 0;
 }
 
-section h2 {
+#help h2 {
   font-size: 2rem;
 }
 
-section h2 span {
+#help h2 span {
   position: relative;
 }
 
-section h2 span::after {
+#help h2 span::after {
   content: "";
   position: absolute;
   top: 90%;
@@ -220,7 +220,7 @@ section h2 span::after {
   background-color: #F19C38;
 }
 
-section .circulo {
+#help .circulo {
   height: 50em;
   width: 20em;
   background-color: #294892;
@@ -233,7 +233,7 @@ section .circulo {
           filter: blur(100px);
 }
 
-section .flex-help {
+#help .flex-help {
   margin-top: 4em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -249,7 +249,7 @@ section .flex-help {
   gap: 1.5em;
 }
 
-section .flex-help .item {
+#help .flex-help .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,14 +268,14 @@ section .flex-help .item {
   height: 8em;
 }
 
-section .flex-help .item p {
+#help .flex-help .item p {
   margin-top: .3em;
 }
 
-section .btn-help {
+#help .btn-help {
   margin: 3em auto;
   border: 1.3px solid #294892;
-  width: 9em;
+  width: 9.5em;
   padding: 1em 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,14 +290,227 @@ section .btn-help {
           box-shadow: 0 0 5px #294892;
 }
 
-section .btn-help a {
+#help .btn-help a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 600;
 }
 
-section .btn-help .arrow {
+#help .btn-help .arrow {
   width: .7em;
+}
+
+#metrics {
+  height: 47em;
+  width: 100%;
+  position: relative;
+  padding: 2em 8% 0;
+}
+
+#metrics h2 {
+  font-size: 2rem;
+}
+
+#metrics h2 span {
+  position: relative;
+}
+
+#metrics h2 span::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  right: 0;
+  height: 3px;
+  width: 56%;
+  background-color: #F19C38;
+}
+
+#metrics p {
+  margin: 2em 0 2em;
+}
+
+#metrics .btn-metrics {
+  border: 1.3px solid #294892;
+  width: 9.5em;
+  padding: 1em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 5px #294892;
+          box-shadow: 0 0 5px #294892;
+}
+
+#metrics .btn-metrics a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#metrics .btn-metrics .arrow {
+  width: .7em;
+}
+
+#metrics .mini-title {
+  margin-top: 3em;
+}
+
+#metrics .mini-title strong {
+  color: #000;
+}
+
+#metrics .container-metrics {
+  width: 18.5em;
+  height: 19em;
+  border: 1px solid #294892;
+  padding: 0 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+#metrics .container-metrics a {
+  font-size: 1.3rem;
+  display: inline-block;
+  margin: .8em 0;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: .2em;
+}
+
+#metrics .container-metrics a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #F19C38;
+}
+
+#metrics .container-metrics .border-metrics {
+  position: absolute;
+  top: .5em;
+  left: .5em;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #294892;
+  z-index: -2;
+}
+
+#metrics .metrics-img {
+  position: absolute;
+  top: 14em;
+  right: 0;
+}
+
+#services {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 2em 8% 0;
+}
+
+#services h2 {
+  font-size: 2rem;
+  margin-bottom: 4em;
+}
+
+#services h2 span {
+  position: relative;
+}
+
+#services h2 span::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  right: 0;
+  height: 3px;
+  width: 25%;
+  background-color: #F19C38;
+}
+
+#services .main-container-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 7em;
+}
+
+#services .main-container-services .container-service {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-11.25%, rgba(3, 17, 52, 0.8)), color-stop(119.37%, rgba(88, 136, 255, 0.616)));
+  background: linear-gradient(180deg, rgba(3, 17, 52, 0.8) -11.25%, rgba(88, 136, 255, 0.616) 119.37%);
+  -webkit-backdrop-filter: blur(16.7876px);
+          backdrop-filter: blur(16.7876px);
+  width: 18.5em;
+  border-radius: 10%;
+  padding: 1em;
+  position: relative;
+}
+
+#services .main-container-services .container-service .it-img {
+  position: absolute;
+  top: -5em;
+  left: 1em;
+}
+
+#services .main-container-services .container-service .cloud-img {
+  position: absolute;
+  top: -5em;
+  left: 2em;
+}
+
+#services .main-container-services .container-service .server-img {
+  position: absolute;
+  top: -5em;
+  left: 3.5em;
+}
+
+#services .main-container-services .container-service .network-img {
+  position: absolute;
+  top: -6em;
+  left: 6em;
+}
+
+#services .main-container-services .container-service .disaster-img {
+  position: absolute;
+  top: -4em;
+  left: 3.5em;
+}
+
+#services .main-container-services .container-service .support-img {
+  position: absolute;
+  top: -5em;
+  left: 4em;
+}
+
+#services .main-container-services .container-service h3 {
+  padding-top: 5em;
+  color: #fff;
+  font-size: 22px;
+}
+
+#services .main-container-services .container-service p {
+  font-size: 14px;
+  color: #fff;
+  margin: 1em 0;
 }
 /*# sourceMappingURL=estilos.css.map */

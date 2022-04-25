@@ -1,4 +1,4 @@
-*{
+*, *::before, *::after{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -150,7 +150,7 @@ header{
 
 // LET US HELP YOU
 
-section{
+#help{
     height: 65em;
     width: 100%;
     position: relative;
@@ -206,7 +206,7 @@ section{
     .btn-help{
         margin: 3em auto;
         border: 1.3px solid #294892;
-        width: 9em;
+        width: 9.5em;
         padding: 1em 1em;
         display: flex;
         justify-content: space-between;
@@ -222,4 +222,176 @@ section{
             width: .7em;
         }
     }
+}
+
+// SECTION TAIOLRED METRICS
+
+#metrics{
+    height: 47em;
+    width: 100%;
+    position: relative;
+    padding: 2em 8% 0;
+    h2{
+        font-size: 2rem;
+        span{
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                top: 90%;
+                right: 0;
+                height: 3px;
+                width: 56%;
+                background-color: #F19C38;
+            }
+        }
+    }
+    p{
+        margin: 2em 0 2em;
+    }
+    .btn-metrics{
+        border: 1.3px solid #294892;
+        width: 9.5em;
+        padding: 1em 1em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 0 5px #294892;
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .arrow{
+            width: .7em;
+        }
+    }
+    .mini-title{
+        margin-top: 3em;
+        strong{
+            color: #000;
+        }
+    }
+    .container-metrics{
+        width: 18.5em;
+        height: 19em;
+        border: 1px solid #294892;
+        padding: 0 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        a{
+            font-size: 1.3rem;
+            display: inline-block;
+            margin: .8em 0;
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+            padding-bottom: .2em;
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: #F19C38;
+            }
+        }
+        .border-metrics{
+            position: absolute;
+            top: .5em;
+            left: .5em;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #294892;
+            z-index: -2;
+        }
+    }
+    .metrics-img{
+        position: absolute;
+        top: 14em;
+        right: 0;
+    }
+}
+
+// SECTION IT SERVICES
+
+#services{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 2em 8% 0;
+    h2{
+        font-size: 2rem;
+        margin-bottom: 4em;
+        span{
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                top: 90%;
+                right: 0;
+                height: 3px;
+                width: 25%;
+                background-color: #F19C38;
+            }
+        }
+    }
+    .main-container-services{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7em;
+        .container-service{
+            background: linear-gradient(180deg, rgba(3, 17, 52, 0.8) -11.25%, rgba(88, 136, 255, 0.616) 119.37%);
+            backdrop-filter: blur(16.7876px);
+            width: 18.5em;
+            border-radius: 10%;
+            padding: 1em;
+            position: relative;
+            .it-img{
+                position: absolute;
+                top: -5em;
+                left: 1em;
+            }
+            .cloud-img{
+                position: absolute;
+                top: -5em;
+                left: 2em;
+            }
+            .server-img{
+                position: absolute;
+                top: -5em;
+                left: 3.5em;
+            }
+            .network-img{
+                position: absolute;
+                top: -6em;
+                left: 6em;
+            }
+            .disaster-img{
+                position: absolute;
+                top: -4em;
+                left: 3.5em;
+            }
+            .support-img{
+                position: absolute;
+                top: -5em;
+                left: 4em;
+            }
+            h3{
+                padding-top: 5em;
+                color: #fff;
+                font-size: 22px;
+            }
+            p{
+                font-size: 14px;
+                color: #fff;
+                margin: 1em 0;
+            }
+        }
+    }
+    
 }
