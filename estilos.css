@@ -421,7 +421,7 @@ header nav ul a:hover {
 }
 
 #services {
-  height: 100%;
+  height: auto;
   width: 100%;
   position: relative;
   padding: 2em 8% 0;
@@ -512,5 +512,161 @@ header nav ul a:hover {
   font-size: 14px;
   color: #fff;
   margin: 1em 0;
+}
+
+#contact {
+  height: 60em;
+  width: 100%;
+  position: relative;
+  padding: 2em 8% 0;
+}
+
+#contact h2 {
+  margin: 1em 0 2em;
+  font-size: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+#contact h2::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  right: 0;
+  height: 3px;
+  width: 40%;
+  background-color: #F19C38;
+}
+
+#contact .container-contact {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2em;
+}
+
+#contact .container-contact .item-contact {
+  text-align: center;
+  width: 19em;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact .container-contact .item-contact h3 {
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  position: relative;
+  margin: 1em 0;
+}
+
+#contact .container-contact .item-contact h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #F19C38;
+}
+
+#contact .container-contact .item-contact p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+}
+
+#contact .container-contact .item-contact img {
+  width: 40%;
+}
+
+#footer {
+  height: 57em;
+  width: 100%;
+  position: relative;
+  padding: 2em 8% 0;
+  -webkit-box-shadow: 0 0 10px #545454;
+          box-shadow: 0 0 10px #545454;
+}
+
+#footer .container-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer .container-footer img {
+  margin: 2em 0;
+}
+
+#footer .container-footer a {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 1em 0;
+  font-weight: 500;
+}
+
+#footer .container-footer2 {
+  margin-top: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2em;
+}
+
+#footer .container-footer2 .item-footer h3 {
+  font-size: 26px;
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+  margin-bottom: .5em;
+}
+
+#footer .container-footer2 .item-footer h3::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  right: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #F19C38;
 }
 /*# sourceMappingURL=estilos.css.map */
