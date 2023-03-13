@@ -17,6 +17,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  display: none;
 }
 
 .open-nav {
@@ -28,7 +29,7 @@ header {
   position: fixed;
   z-index: 999;
   height: 5em;
-  width: 100vw;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,7 +49,7 @@ header .logo {
   width: 3.5em;
 }
 
-header .logo img {
+header .logo svg {
   width: 100%;
 }
 
@@ -476,6 +477,19 @@ header nav ul a:hover {
   padding: 2em 8% 0;
 }
 
+#services .circulo {
+  height: 50em;
+  width: 20em;
+  background-color: #294892;
+  position: absolute;
+  top: 10em;
+  right: -20em;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  -webkit-filter: blur(100px);
+          filter: blur(100px);
+}
+
 #services h2 {
   font-size: 2rem;
   margin-bottom: 4em;
@@ -547,10 +561,10 @@ header nav ul a:hover {
 }
 
 #contact {
-  height: 60em;
+  height: auto;
   width: 100%;
   position: relative;
-  padding: 2em 8% 0;
+  padding: 10em 8%;
 }
 
 #contact h2 {
@@ -726,10 +740,10 @@ header nav ul a:hover {
     display: none;
   }
   header .logo {
-    width: 5.5em;
+    width: 5em;
   }
-  header .logo img {
-    width: 5.5em;
+  header .logo svg {
+    width: 100%;
   }
   header .support {
     display: -webkit-box;
@@ -859,8 +873,8 @@ header nav ul a:hover {
     display: flex;
   }
   .hero .main-text {
+    z-index: 999;
     width: 50%;
-    z-index: 10;
   }
   .hero .main-text h1 {
     font-weight: 700;
@@ -912,8 +926,8 @@ header nav ul a:hover {
   .hero .gradient {
     background: -webkit-gradient(linear, left bottom, left top, from(#FFFFFF), to(rgba(255, 255, 255, 0)));
     background: linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-    height: 10em;
-    z-index: 500;
+    height: 40em;
+    z-index: 100;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -946,12 +960,12 @@ header nav ul a:hover {
     width: 20em;
     background-color: #294892;
     position: absolute;
-    top: 10em;
-    left: -20em;
+    top: 20em;
+    left: -7em;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
-    -webkit-filter: blur(100px);
-            filter: blur(100px);
+    -webkit-filter: blur(200px);
+            filter: blur(200px);
   }
   #help .flex-help {
     width: 60%;
@@ -1166,6 +1180,18 @@ header nav ul a:hover {
     position: relative;
     padding: 10em 8% 0;
   }
+  #services .circulo {
+    height: 50em;
+    width: 20em;
+    background-color: #294892;
+    position: absolute;
+    top: 20em;
+    right: -7em;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    -webkit-filter: blur(200px);
+            filter: blur(200px);
+  }
   #services h2 {
     font-size: 3.5rem;
     margin-bottom: 2em;
@@ -1236,10 +1262,10 @@ header nav ul a:hover {
     margin: 1em 0;
   }
   #contact {
-    height: 50em;
+    height: auto;
     width: 100%;
     position: relative;
-    padding: 5em 8% 0;
+    padding: 5em 8%;
   }
   #contact h2 {
     margin: 1em 0 2em;

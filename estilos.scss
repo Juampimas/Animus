@@ -16,6 +16,7 @@ body{
     position: absolute;
     top: 0;
     left: 0;
+    display: none;
 }
 
 .open-nav{
@@ -26,7 +27,7 @@ header{
     position: fixed;
     z-index: 999;
     height: 5em;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,7 +36,7 @@ header{
     box-shadow: 0 2px 7px rgb(153, 153, 153);
     .logo{
         width: 3.5em;
-        img{
+        svg{
             width: 100%;
         }
     }
@@ -360,6 +361,17 @@ header{
     width: 100%;
     position: relative;
     padding: 2em 8% 0;
+    .circulo{
+        height: 50em;
+        width: 20em;
+        background-color: #294892;
+        position: absolute;
+        top: 10em;
+        right: -20em;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        filter: blur(100px);
+    }
     h2{
         font-size: 2rem;
         margin-bottom: 4em;
@@ -414,10 +426,10 @@ header{
 // SECTION CONTACT
 
 #contact{
-    height: 60em;
+    height: auto;
     width: 100%;
     position: relative;
-    padding: 2em 8% 0;
+    padding: 10em 8%;
     h2{
         margin: 1em 0 2em;
         font-size: 2rem;
@@ -543,9 +555,9 @@ header{
             display: none;
         }
         .logo{
-            width: 5.5em;
-            img{
-                width: 5.5em;
+            width: 5em;
+            svg{
+                width: 100%;
             }
         }
         .support{
@@ -646,8 +658,8 @@ header{
             display: flex;
         }
         .main-text{
+            z-index: 999;
             width: 50%;
-            z-index: 10;
             h1{
                 font-weight: 700;
                 font-size: 76px;
@@ -689,8 +701,8 @@ header{
         }
         .gradient{
             background: linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-            height: 10em;
-            z-index: 500;
+            height: 40em;
+            z-index: 100;
             width: 100%;
             position: absolute;
             bottom: 0;
@@ -727,11 +739,11 @@ header{
             width: 20em;
             background-color: #294892;
             position: absolute;
-            top: 10em;
-            left: -20em;
+            top: 20em;
+            left: -7em;
             border-top-right-radius: 50%;
             border-bottom-right-radius: 50%;
-            filter: blur(100px);
+            filter: blur(200px);
         }
         .flex-help{
             width: 60%;
@@ -904,6 +916,17 @@ header{
         width: 100%;
         position: relative;
         padding: 10em 8% 0;
+        .circulo{
+            height: 50em;
+            width: 20em;
+            background-color: #294892;
+            position: absolute;
+            top: 20em;
+            right: -7em;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+            filter: blur(200px);
+        }
         h2{
             font-size: 3.5rem;
             margin-bottom: 2em;
@@ -960,10 +983,10 @@ header{
     }
 
     #contact{
-        height: 50em;
+        height: auto;
         width: 100%;
         position: relative;
-        padding: 5em 8% 0;
+        padding: 5em 8%;
         h2{
             margin: 1em 0 2em;
             font-size: 3.5rem;
