@@ -27,7 +27,7 @@ body {
 
 header {
   position: fixed;
-  z-index: 999;
+  z-index: 9999;
   height: 5em;
   width: 100%;
   display: -webkit-box;
